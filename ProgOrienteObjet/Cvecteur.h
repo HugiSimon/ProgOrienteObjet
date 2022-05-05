@@ -13,6 +13,20 @@ private :
 public :
 
 	//fonctions membres
-	void initVect(int nX, int nY, int nZ);
+
+		//Un constructeur
+	Cvecteur(); 
+	
+		//Set
+
+	void setX(const int nX);
+	void setY(const int nY);
+	void setZ(const int nZ);
+
+		//Get
+
+	int getX()const; //Const dit que la fonction ne peux pas modifier la donnees membres 
+	int getY()const;
+	int getZ()const;
 
 };

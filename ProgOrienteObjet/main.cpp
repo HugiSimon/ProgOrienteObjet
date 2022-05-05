@@ -8,7 +8,7 @@
 
 int main() {
 
-	printf_s("Version 1.0 du CPP");
+	printf_s("Version 1.0 du CPP\n");
 
 	//Type Structure
 	vecteur tvect;
@@ -23,7 +23,8 @@ int main() {
 	Cvecteur cVect;
 	//cVect.m_nX = 0; //Que dispo si la variable m_nX est public
 
-	cVect.initVect(8, 3, 9);
+	cVect.setX(5);
+	printf_s("X : %d", cVect.getX());
 
 	return 0;
 
