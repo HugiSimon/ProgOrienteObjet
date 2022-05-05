@@ -4,11 +4,13 @@
 
 #include <stdio.h>
 #include "tvect.h"
+#include "Cvecteur.h"
 
 int main() {
 
 	printf_s("Version 1.0 du CPP");
 
+	//Type Structure
 	vecteur tvect;
 
 	tvect.n_x = 0;
@@ -16,6 +18,12 @@ int main() {
 	tvect.n_z = 0;
 
 	initVecteur(&tvect, 5, 2, 9);
+
+	//Type classe objet
+	Cvecteur cVect;
+	//cVect.m_nX = 0; //Que dispo si la variable m_nX est public
+
+	cVect.initVect(8, 3, 9);
 
 	return 0;
 
