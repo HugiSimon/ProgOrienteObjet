@@ -1,8 +1,4 @@
 //Fichier main.cpp
-//Version 1.0
-//Branche release
-
-#include <stdio.h>
 
 int main() {
 
