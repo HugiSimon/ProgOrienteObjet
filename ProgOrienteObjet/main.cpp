@@ -9,6 +9,9 @@
 //#define TAILLE 255 //C'est pas une variable constante mais une macro
 //const int TAILLE = 255; //Prend de la place en plus dans la memoire, mais a d'autre utilite
 
+void incI();
+static int fct(int);
+
 int main() {
 
 	printf_s("Version 1.0 du CPP\n");
@@ -31,6 +34,25 @@ int main() {
 	cVect.setX(5);
 	printf_s("X : %d", cVect.getX());
 
+	incI();
+	incI();
+	incI();
+
+	fct(5);
+
 	return 0;
 
+}
+
+void incI() {
+
+	//variable static
+	static int n_i = 0; //Variable qui est stocke au même endroit, si on appelle 3 fois la fonction, ça va s'incrementer
+	n_i = n_i + 1;
+	printf_s("\n%d", n_i);
+}
+
+static int fct(int n_val) { //Le static pour une fonction peut que etre utilise dans le ficher ou elle est declare
+
+	return n_val;
 }
