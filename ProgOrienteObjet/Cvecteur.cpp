@@ -7,17 +7,24 @@ Cvecteur::Cvecteur()
 	this->m_nZ = 0;
 }
 
-void Cvecteur::setX(int nX)
+Cvecteur::Cvecteur(int nX, int nY, int nZ):m_nX(nX),m_nY(nY),m_nZ(nZ) //Un raccourci de code qui fait la meme chose
+{
+	/*this->m_nX = nX;
+	this->m_nY = nY;
+	this->m_nZ = nZ;*/
+}
+
+void Cvecteur::setX(const int nX)
 {
 	this->m_nX = nX;
 }
 
-void Cvecteur::setY(int nY)
+void Cvecteur::setY(const int nY)
 {
 	this->m_nY = nY;
 }
 
-void Cvecteur::setZ(int nZ)
+void Cvecteur::setZ(const int nZ)
 {
 	this->m_nZ = nZ;
 }

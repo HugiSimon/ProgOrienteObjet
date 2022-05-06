@@ -6,6 +6,9 @@
 #include "tvect.h"
 #include "Cvecteur.h"
 
+//#define TAILLE 255 //C'est pas une variable constante mais une macro
+//const int TAILLE = 255; //Prend de la place en plus dans la memoire, mais a d'autre utilite
+
 int main() {
 
 	printf_s("Version 1.0 du CPP\n");
@@ -21,6 +24,8 @@ int main() {
 
 	//Type classe objet
 	Cvecteur cVect;
+	Cvecteur cVect2(1,3,6);
+
 	//cVect.m_nX = 0; //Que dispo si la variable m_nX est public
 
 	cVect.setX(5);
